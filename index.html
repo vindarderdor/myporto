@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De'vinno Ryansyah O - Portfolio</title>
+    <!-- Google Fonts: Jost & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Global Animated Background -->
+    <div class="section-gradient-bg"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Header (Logo + Hamburger) -->
+    <header class="site-header" id="header">
+        <a href="#home" class="site-logo">D R O<span>.</span></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+            <div class="menu-toggle__line"></div>
+            <div class="menu-toggle__line"></div>
+        </button>
+    </header>
+
+    <!-- Fullscreen Menu -->
+    <nav class="fullscreen-menu" id="fullscreenMenu">
+        <div class="fullscreen-menu__bg"></div>
+        <div class="fullscreen-menu__inner">
+            <ul class="fullscreen-menu__links">
+                <li><a href="#home" class="menu-link" data-text="01">Home</a></li>
+                <li><a href="#about" class="menu-link" data-text="02">About & Skills</a></li>
+                <li><a href="#experience" class="menu-link" data-text="03">Experience & Projects</a></li>
+                <li><a href="#contact" class="menu-link" data-text="04">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Side Navigation -->
+    <aside class="side-nav">
+        <ul class="side-nav__dots">
+            <li><a href="#home" class="nav-dot active" data-tooltip="Home"></a></li>
+            <li><a href="#about" class="nav-dot" data-tooltip="About"></a></li>
+            <li><a href="#experience" class="nav-dot" data-tooltip="Projects"></a></li>
+            <li><a href="#skills" class="nav-dot" data-tooltip="Skills"></a></li>
+            <li><a href="#contact" class="nav-dot" data-tooltip="Contact"></a></li>
+        </ul>
+    </aside>
+
+    <!-- Hero Section -->
+    <section id="home" class="section">
+        <div class="container hero-container">
+            <div class="hero-text reveal">
+                <span class="hero-subtitle">Fullstack Developer</span>
+                <h1 class="hero-title">Halo,<br>saya <span class="text-gradient">De'vinno</span><span
+                        class="text-accent">.</span></h1>
+                <div class="hero-typing">
+                    <span id="typing-text"></span><span class="typing-cursor"></span>
+                </div>
+                <p class="hero-gpa">Universitas Airlangga College Student</p>
+                <div class="hero-socials">
+                    <div class="magnetic-wrap"><a href="https://github.com/vindarderdor" target="_blank"><i
+                                class="fab fa-github"></i></a></div>
+                    <div class="magnetic-wrap"><a href="https://linkedin.com/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a></div>
+                    <div class="magnetic-wrap"><a href="mailto:vinnoriyansyah@gmail.com"><i
+                                class="fas fa-envelope"></i></a></div>
+                    <div class="magnetic-wrap"><a href="https://wa.me/6285204219559" target="_blank"><i
+                                class="fab fa-whatsapp"></i></a></div>
+                </div>
+            </div>
+            <div class="hero-image reveal">
+                <div class="profile-placeholder">
+                    <img src="profile.jpg" alt="De'vinno Ryansyah O"
+                        style="position: absolute; inset: 15px; width: calc(100% - 30px); height: calc(100% - 30px); border-radius: 50%; object-fit: cover; z-index: 2; border: 1px solid var(--border-color);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">Tentang Saya</h2>
+            <p class="about-text">
+                Mahasiswa Teknik Informatika di Universitas Airlangga yang memiliki minat dan pengalaman dalam
+                pengembangan
+                perangkat lunak berbasis web, mobile, serta sistem berbasis Artificial Intelligence (AI). Selama masa
+                perkuliahan, aktif mengembangkan berbagai proyek seperti website, aplikasi mobile, sistem AI, dan solusi
+                digital lainnya dengan fokus pada performa, fungsionalitas, dan pengalaman pengguna. Memiliki kemampuan
+                belajar yang cepat, adaptif terhadap teknologi baru, serta mampu bekerja secara individu maupun tim
+                dalam
+                proses pengembangan software.
+            </p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Aug 2023 - May 2027</div>
+                        <h3 class="timeline-title">Universitas Airlangga - Surabaya</h3>
+                        <div class="timeline-subtitle">Diploma, Teknik Informatika</div>
+                        <p class="timeline-desc">
+                            <strong>IPK:</strong> 3.26/4.00<br><br>
+                            <strong>Highlights:</strong> Mengerjakan beberapa proyek aplikasi berbasis Laravel +
+                            MySQL/PostgreSQL untuk sistem reservasi, e-commerce, dll. Implementasi clean architecture
+                            Golang
+                            dan pengujian API dengan Postman.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Projects Section -->
+    <section id="experience" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">Pengalaman & Proyek</h2>
+            <div class="grid-cards">
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-building"></i></div>
+                    <h3 class="card-title">CV GLOBALTECH VIDEO PC (Magang)</h3>
+                    <p class="card-desc">Menjalani program magang selama 6 bulan pada divisi Multimedia dengan terlibat
+                        dalam pembuatan konten visual, pengelolaan media digital, serta mendukung operasional
+                        perusahaan.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3 class="card-title">Adidas Redesign (UI/UX)</h3>
+                    <p class="card-desc">Perancangan ulang website e-commerce Adidas dengan konsep UI/UX modern
+                        menggunakan HTML, CSS, JavaScript. Tampilan responsif dan navigasi intuitif.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-home"></i></div>
+                    <h3 class="card-title">Gundih Siaga (KKN)</h3>
+                    <p class="card-desc">Membangun website sistem informasi desa berbasis Next.js dengan fitur informasi
+                        desa, UMKM, pelaporan warga, dan peta interaktif.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-store"></i></div>
+                    <h3 class="card-title">Gundih Digital (KKN)</h3>
+                    <p class="card-desc">Membangun website katalog UMKM berbasis HTML, CSS, JavaScript dengan fitur
+                        informasi produk dan profil usaha.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <h3 class="card-title">E-Commerce Project</h3>
+                    <p class="card-desc">Mengembangkan website e-commerce dengan HTML, CSS, JS. Fitur meliputi katalog,
+                        pencarian, keranjang, checkout, dan manajemen pesanan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">Keterampilan Teknologi</h2>
+            <div class="skill-groups">
+                <div class="skill-group">
+                    <h3>Programming Languages</h3>
+                    <div class="tags">
+                        <span class="tag"><i class="devicon-go-original colored"></i> Go</span>
+                        <span class="tag"><i class="devicon-python-plain colored"></i> Python</span>
+                        <span class="tag"><i class="devicon-php-plain colored"></i> PHP</span>
+                        <span class="tag"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                        <span class="tag"><i class="devicon-java-plain colored"></i> Java</span>
+                        <span class="tag"><i class="devicon-dart-plain colored"></i> Dart</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Backend</h3>
+                    <div class="tags">
+                        <span class="tag"><i class="devicon-fastapi-plain colored"></i> FastAPI</span>
+                        <span class="tag"><i class="devicon-laravel-plain colored"></i> Laravel</span>
+                        <span class="tag"><i class="devicon-nextjs-plain"></i> Next.js</span>
+                        <span class="tag"><i class="fas fa-server" style="color: #64748b;"></i> PocketBase</span>
+                        <span class="tag"><i class="devicon-supabase-plain colored"></i> Supabase</span>
+                        <span class="tag"><i class="devicon-go-original colored"></i> Go Fiber</span>
+                        <span class="tag"><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+                        <span class="tag"><i class="devicon-flask-original"></i> Flask</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Frontend</h3>
+                    <div class="tags">
+                        <span class="tag"><i class="devicon-react-original colored"></i> React</span>
+                        <span class="tag"><i class="devicon-nextjs-plain"></i> Next.js</span>
+                        <span class="tag"><i class="devicon-vuejs-plain colored"></i> Vue.js</span>
+                        <span class="tag"><i class="devicon-flutter-plain colored"></i> Flutter</span>
+                        <span class="tag"><i class="devicon-tailwindcss-original colored"></i> Tailwind CSS</span>
+                        <span class="tag"><i class="devicon-bootstrap-plain colored"></i> Bootstrap</span>
+                        <span class="tag"><i class="devicon-html5-plain colored"></i> HTML5</span>
+                        <span class="tag"><i class="devicon-css3-plain colored"></i> CSS3</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Database</h3>
+                    <div class="tags">
+                        <span class="tag"><i class="devicon-postgresql-plain colored"></i> PostgreSQL</span>
+                        <span class="tag"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+                        <span class="tag"><i class="devicon-mongodb-plain colored"></i> MongoDB</span>
+                        <span class="tag"><i class="devicon-supabase-plain colored"></i> Supabase</span>
+                        <span class="tag"><i class="fas fa-database" style="color: #64748b;"></i> PocketBase</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Tools</h3>
+                    <div class="tags">
+                        <span class="tag"><i class="devicon-git-plain colored"></i> Git</span>
+                        <span class="tag"><i class="devicon-docker-plain colored"></i> Docker</span>
+                        <span class="tag"><i class="devicon-postman-plain colored"></i> Postman</span>
+                        <span class="tag"><i class="devicon-swagger-plain colored"></i> Swagger</span>
+                        <span class="tag"><i class="devicon-figma-plain colored"></i> Figma</span>
+                        <span class="tag"><i class="devicon-streamlit-plain colored"></i> Streamlit</span>
+                        <span class="tag"><i class="fas fa-cube" style="color: #ff9900;"></i> Gradio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">Hubungi Saya</h2>
+            <div class="contact-container">
+                <!-- Info List -->
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div class="info-text">
+                            <h4>Telepon / WhatsApp</h4>
+                            <p>085204219559</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="info-text">
+                            <h4>Email</h4>
+                            <p>vinnoriyansyah@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="info-text">
+                            <h4>Alamat</h4>
+                            <p>JL. PETUKANGAN 5/1 SURABAYA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aesthetic Form -->
+                <div class="contact-form">
+                    <form action="#" onsubmit="event.preventDefault();">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nama Lengkap" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Tulis pesan Anda disini..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 De'vinno Ryansyah O. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script src="script.js"></script>
+</body>
+
+</html>
