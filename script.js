@@ -1,3 +1,16 @@
+// 0. Loading Screen
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        const loadingScreen = document.getElementById('loading-screen');
+        if (loadingScreen) {
+            loadingScreen.classList.add('hidden');
+            setTimeout(() => {
+                loadingScreen.style.display = 'none';
+            }, 800); // Wait for fade out transition (0.8s)
+        }
+    }, 2000); // 2s wait to let the loader bar animation finish
+});
+
 // 1. Custom Cursor
         const cursorDot = document.getElementById('cursorDot');
         const cursorRing = document.getElementById('cursorRing');
